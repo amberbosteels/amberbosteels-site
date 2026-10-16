@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap');
 
 :root {
-  --paper: #f4ebd7;
-  --card: #fffaf0;
+  --paper: #ffffff;
+  --card: #f7f1e4;
   --ink: #3a2424;
   --soft: #6a4545;
   --line: rgba(93, 39, 39, .18);
@@ -176,3 +176,44 @@ footer p { margin: 0; }
 .brand, .page-title, .theme h2, .work h2, .teach-item h2 { letter-spacing: -.015em; }
 .button { border-color: var(--burgundy); color: var(--burgundy); }
 .button:hover { background: var(--burgundy); color: var(--paper); }
+
+/* ---------- v5: Louis Thuriot-style home ---------- */
+.site-header { flex-direction: column; justify-content: center; gap: 10px; padding-top: clamp(24px, 3vw, 40px); padding-bottom: clamp(18px, 2vw, 28px); text-align: center; }
+.brand { font-size: clamp(34px, 6vw, 84px); font-weight: 800; letter-spacing: .02em; line-height: 1; }
+nav { justify-content: center; font-weight: 500; }
+
+/* full-bleed photos, no white edges */
+.hero { max-width: none; padding: 0; }
+.hero img { width: 100%; height: auto; display: block; }
+
+.banners { display: block; }
+.banner {
+  position: relative; display: grid; place-items: center;
+  height: clamp(240px, 38vw, 520px); overflow: hidden;
+  text-decoration: none; background: var(--burgundy);
+}
+.banner img {
+  position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;
+  transition: transform .6s ease;
+}
+.banner::before { content: ""; position: absolute; inset: 0; background: rgba(40, 20, 20, .32); z-index: 1; transition: background .3s; }
+.banner:hover::before { background: rgba(40, 20, 20, .18); }
+.banner:hover img { transform: scale(1.03); }
+@media (prefers-reduced-motion: reduce) { .banner img, .banner::before { transition: none; } }
+.banner-title {
+  position: relative; z-index: 2;
+  color: #fff; font-weight: 800; text-transform: uppercase; text-align: center;
+  font-size: clamp(28px, 5.4vw, 80px); line-height: 1; letter-spacing: .01em;
+  padding: 0 16px;
+}
+.banner-title .circled { padding: .12em .4em; }
+.banner-title .circled::after { inset: -.12em -.2em -.08em -.25em; }
+.banner-film svg { position: absolute; z-index: 1; width: clamp(110px, 16vw, 220px); opacity: .22; right: 8%; top: 50%; transform: translateY(-50%) rotate(-6deg); }
+.banner-film::before { display: none; }
+
+/* footer right after the banners */
+.banners + * , main:has(.banners) + footer { margin-top: 0; }
+@media (max-width: 640px) {
+  .site-header { align-items: center; }
+  .banner-title .circled::after { inset: -.2em -.15em -.12em -.2em; }
+}
