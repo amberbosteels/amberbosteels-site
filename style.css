@@ -217,3 +217,8 @@ nav { justify-content: center; font-weight: 500; }
   .site-header { align-items: center; }
   .banner-title .circled::after { inset: -.2em -.15em -.12em -.2em; }
 }
+
+/* ---------- v6 ---------- */
+.hero { margin-bottom: clamp(10px, 1.4vw, 18px); } /* white strip after the first photo */
+.socials .insta { color: var(--burgundy); display: inline-flex; }
+.socials .insta:hover { color: var(--rust); }
