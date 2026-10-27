@@ -1,0 +1,47 @@
+/* Homepage refinements: more breathing room and a discreet About link on the hero photo. */
+.hero {
+  margin-bottom: clamp(34px, 5vw, 68px) !important;
+}
+.hero-about-link {
+  display: block;
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+  overflow: hidden;
+}
+.hero-about-link > img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.hero-about-label {
+  position: absolute;
+  z-index: 2;
+  right: clamp(18px, 5vw, 72px);
+  bottom: clamp(18px, 4vw, 54px);
+  font-family: "Inter", Helvetica, Arial, sans-serif;
+  font-size: clamp(20px, 3vw, 38px);
+  font-weight: 800;
+  line-height: 1;
+  text-transform: uppercase;
+  opacity: .96;
+  transition: opacity .2s ease, transform .2s ease;
+}
+.hero-about-link:hover .hero-about-label {
+  opacity: 1;
+  transform: translateY(-3px);
+}
+.hero-about-link:focus-visible {
+  outline: 3px solid var(--rust);
+  outline-offset: -6px;
+}
+@media (max-width: 640px) {
+  .hero-about-label {
+    right: 16px;
+    bottom: 16px;
+    font-size: clamp(18px, 5vw, 28px);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-about-label { transition: none; }
+}
