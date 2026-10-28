@@ -1,0 +1,21 @@
+BESTANDEN VOOR DE AANGEPASTE TEACHING-PAGINA
+
+Deze update gebruikt de zeven nieuwe foto's uit je ZIP. De foto's zijn hernoemd zodat alle links op de site eenvoudig en hoofdlettergevoelig kloppen.
+
+WAT JE OP GITHUB MOET DOEN
+1. Vervang teaching.html in de hoofdmap van de repository.
+2. Vervang style.css in de hoofdmap door de meegeleverde versie. Die verwijdert de stippellijn boven Get in touch en bevat de vierkante fotokaarten.
+3. Upload de zeven foto's uit de map img naar de bestaande map img in je repository. Laat bestaande andere afbeeldingen in img staan; verwijder niets.
+4. Laat navigation-hover.css staan. De aangepaste teaching.html linkt naar dit bestand zodat de cirkeltjes bij hover op de navigatie blijven werken.
+5. Commit de wijzigingen op GitHub.
+
+Bestanden in img:
+- contemporary-dance.jpg
+- contact-improvisation.jpg
+- young-childrens-dance.png
+- tattva.jpg
+- kathak.jpg
+- moving-through-play.png
+- yoga.jpg
+
+De Teaching-pagina gebruikt vierkante fotokaders: drie kolommen op brede schermen, twee op tablets en één op smalle telefoons. Tattva staat als aparte kaart met titel; er is geen beschrijving toegevoegd omdat die niet was meegeleverd.
