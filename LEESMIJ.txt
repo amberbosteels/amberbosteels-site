@@ -1,21 +1,17 @@
-BESTANDEN VOOR DE AANGEPASTE TEACHING-PAGINA
+GITHUB-UPDATE — AMBER BOSTEELS
 
-Deze update gebruikt de zeven nieuwe foto's uit je ZIP. De foto's zijn hernoemd zodat alle links op de site eenvoudig en hoofdlettergevoelig kloppen.
+Deze update bevat:
+- about.html: bijgewerkte About me-tekst; de Download my CV-knop is verwijderd; de knop heet nu Showreel.
+- performance.html: de Tattva-foto verwijst nu naar img/tattva.jpg.
+- teaching.html: Tattva is verwijderd uit de Teaching-fotokaarten; de zes andere lesstijlen blijven staan.
+- style.css: vierkante Teaching-fotokaarten en geen stippellijn boven Get in touch.
+- img/: de zes foto's voor Teaching en tattva.jpg voor de Tattva-performance.
 
 WAT JE OP GITHUB MOET DOEN
-1. Vervang teaching.html in de hoofdmap van de repository.
-2. Vervang style.css in de hoofdmap door de meegeleverde versie. Die verwijdert de stippellijn boven Get in touch en bevat de vierkante fotokaarten.
-3. Upload de zeven foto's uit de map img naar de bestaande map img in je repository. Laat bestaande andere afbeeldingen in img staan; verwijder niets.
-4. Laat navigation-hover.css staan. De aangepaste teaching.html linkt naar dit bestand zodat de cirkeltjes bij hover op de navigatie blijven werken.
-5. Commit de wijzigingen op GitHub.
+1. Vervang in de hoofdmap: about.html, performance.html, teaching.html en style.css.
+2. Upload de afbeeldingen uit deze ZIP naar de bestaande map img/ op GitHub. Overschrijf img/tattva.jpg met de meegeleverde nieuwe Tattva-foto.
+3. Verwijder geen andere bestanden uit img/. De andere pagina's gebruiken nog bestaande foto's, zoals img/about.jpg en img/zebra.jpg.
+4. Laat navigation-hover.css staan in de hoofdmap. De drie bijgewerkte pagina's laden die stylesheet voor de cirkeltjes bij hover.
+5. Klik op Commit changes.
 
-Bestanden in img:
-- contemporary-dance.jpg
-- contact-improvisation.jpg
-- young-childrens-dance.png
-- tattva.jpg
-- kathak.jpg
-- moving-through-play.png
-- yoga.jpg
-
-De Teaching-pagina gebruikt vierkante fotokaders: drie kolommen op brede schermen, twee op tablets en één op smalle telefoons. Tattva staat als aparte kaart met titel; er is geen beschrijving toegevoegd omdat die niet was meegeleverd.
+Let op: deze ZIP bevat niet alle bestanden van je website. Upload alleen de genoemde bestanden en afbeeldingen; laat index.html, film.html, works.html, cv.pdf en andere bestaande bestanden staan.
