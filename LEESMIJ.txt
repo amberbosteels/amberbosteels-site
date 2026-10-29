@@ -1,17 +1,22 @@
-GITHUB-UPDATE — AMBER BOSTEELS
+GITHUB-UPDATE — AMBER BOSTEELS (VERSIE 4)
 
-Deze update bevat:
-- about.html: bijgewerkte About me-tekst; de Download my CV-knop is verwijderd; de knop heet nu Showreel.
-- performance.html: de Tattva-foto verwijst nu naar img/tattva.jpg.
-- teaching.html: Tattva is verwijderd uit de Teaching-fotokaarten; de zes andere lesstijlen blijven staan.
-- style.css: vierkante Teaching-fotokaarten en geen stippellijn boven Get in touch.
-- img/: de zes foto's voor Teaching en tattva.jpg voor de Tattva-performance.
+Deze update bouwt verder op versie 3. In de sectie “Get in touch” staat nu ook je telefoonnummer als klikbare link: +32486881462. Het nummer is toegevoegd op de homepage en op de About me-, Performance-, Teaching- en Film & photography-pagina.
+
+De overige aanpassingen uit versie 3 blijven behouden:
+- performance.html: “Own work”, bijgewerkte credits en de Tattva-link naar de meegeleverde pdf.
+- film.html: nieuwe tekst over film en fotografie, zonder foto.
+- teaching.html: “Watch a video” bij Contact improvisation is verwijderd.
+- about.html: je nieuwe About me-tekst en Showreel-link.
+- style.css: actuele styling voor de aangepaste pagina's.
+- tattva-information.pdf en de foto's in img/ zijn meegeleverd.
 
 WAT JE OP GITHUB MOET DOEN
-1. Vervang in de hoofdmap: about.html, performance.html, teaching.html en style.css.
-2. Upload de afbeeldingen uit deze ZIP naar de bestaande map img/ op GitHub. Overschrijf img/tattva.jpg met de meegeleverde nieuwe Tattva-foto.
-3. Verwijder geen andere bestanden uit img/. De andere pagina's gebruiken nog bestaande foto's, zoals img/about.jpg en img/zebra.jpg.
-4. Laat navigation-hover.css staan in de hoofdmap. De drie bijgewerkte pagina's laden die stylesheet voor de cirkeltjes bij hover.
-5. Klik op Commit changes.
+1. Vervang in de hoofdmap van je repository: index.html, about.html, performance.html, film.html, teaching.html en style.css.
+2. Upload tattva-information.pdf naar de hoofdmap van je repository. De Tattva-link verwijst naar dit bestand.
+3. Upload de meegeleverde foto's uit de map img/ naar de bestaande map img/ op GitHub. Overschrijf img/tattva.jpg met de meegeleverde Tattva-foto.
+4. Verwijder geen andere bestanden uit img/. Pagina's gebruiken nog bestaande foto's, zoals img/about.jpg en img/zebra.jpg.
+5. Laat navigation-hover.css in de hoofdmap staan; de pagina's laden deze stylesheet voor de hover-cirkels.
+6. Klik op Commit changes.
 
-Let op: deze ZIP bevat niet alle bestanden van je website. Upload alleen de genoemde bestanden en afbeeldingen; laat index.html, film.html, works.html, cv.pdf en andere bestaande bestanden staan.
+Let op: deze ZIP bevat niet alle bestanden van je website. Upload/vervang alleen de hierboven genoemde bestanden en afbeeldingen. Laat overige bestanden, zoals works.html en cv.pdf, staan. Als je works.html nog gebruikt, voeg daar in de footer onder het e-mailadres ook deze regel toe:
+<p><a href="tel:+32486881462">+32486881462</a></p>
