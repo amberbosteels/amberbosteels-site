@@ -1,20 +1,18 @@
-GITHUB-UPDATE — AMBER BOSTEELS (VERSIE 5)
+GITHUB-UPDATE — AMBER BOSTEELS (VERSIE 6)
 
-Deze update bouwt verder op versie 4. De cirkels rond de titels Hans, Tattva en Jumping Over the Zebra Stripes zijn verwijderd. Ook het beschrijvende tekstje bij Jumping Over the Zebra Stripes is verwijderd. De eerdere aanpassingen, waaronder het klikbare telefoonnummer +32486881462 bij “Get in touch”, blijven behouden.
+Deze update bouwt verder op versie 5. De mobiele homepage is verfijnd:
+- het menu staat op gsm in een overzichtelijk raster van twee kolommen;
+- de hero-foto loopt op smalle schermen over de volledige breedte;
+- de footer “Get in touch” is groter en beter leesbaar, met duidelijkere e-mail- en telefoongegevens en een groter Instagram-icoon;
+- de footer heeft een zachte warme achtergrond en houdt rekening met de veilige onderrand van telefoons.
 
-De overige aanpassingen uit versie 3 blijven behouden:
-- performance.html: “Own work”, bijgewerkte credits en de Tattva-link naar de meegeleverde pdf.
-- film.html: nieuwe tekst over film en fotografie, zonder foto.
-- teaching.html: “Watch a video” bij Contact improvisation is verwijderd.
-- about.html: je nieuwe About me-tekst en Showreel-link.
-- style.css: actuele styling voor de aangepaste pagina's.
-- tattva-information.pdf en de foto's in img/ zijn meegeleverd.
+Alle eerdere aanpassingen uit versie 5 blijven behouden, waaronder de aangepaste Performance-, Teaching-, About me- en Film & photography-pagina's en de Tattva-pdf.
 
 WAT JE OP GITHUB MOET DOEN
 1. Vervang in de hoofdmap van je repository: index.html, about.html, performance.html, film.html, teaching.html en style.css.
 2. Upload tattva-information.pdf naar de hoofdmap van je repository. De Tattva-link verwijst naar dit bestand.
 3. Upload de meegeleverde foto's uit de map img/ naar de bestaande map img/ op GitHub. Overschrijf img/tattva.jpg met de meegeleverde Tattva-foto.
-4. Verwijder geen andere bestanden uit img/. Pagina's gebruiken nog bestaande foto's, zoals img/about.jpg en img/zebra.jpg.
+4. Verwijder geen andere bestanden uit img/. Pagina's gebruiken nog bestaande foto's, zoals img/hero.jpg, img/about.jpg en img/zebra.jpg.
 5. Laat navigation-hover.css in de hoofdmap staan; de pagina's laden deze stylesheet voor de hover-cirkels.
 6. Klik op Commit changes.
 

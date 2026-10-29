@@ -244,3 +244,74 @@ footer p { margin: 0; }
   font-size: clamp(28px, 3vw, 42px); line-height: 1.12;
   margin: 0 0 8px; letter-spacing: -.015em;
 }
+
+
+/* Mobile homepage refinement: clearer navigation and a more readable contact footer. */
+@media (max-width: 640px) {
+  body.home .site-header {
+    gap: 15px;
+    padding: 24px 18px 18px;
+  }
+  body.home .brand {
+    font-size: clamp(27px, 7.2vw, 36px);
+    line-height: 1.08;
+    letter-spacing: .01em;
+  }
+  body.home nav {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    justify-content: center;
+    justify-items: center;
+    column-gap: clamp(18px, 6vw, 30px);
+    row-gap: 6px;
+    font-size: 15px;
+    line-height: 1.35;
+  }
+  body.home nav a {
+    padding: 5px 2px;
+    text-align: center;
+  }
+  body.home .hero {
+    max-width: none;
+    padding: 0;
+    margin-bottom: 0;
+  }
+  body.home .hero a { display: block; }
+  body.home .hero img {
+    width: 100%;
+    height: auto;
+  }
+  body.home footer {
+    width: 100%;
+    max-width: none;
+    margin: 30px auto 0;
+    padding: 30px 22px calc(32px + env(safe-area-inset-bottom, 0px));
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    justify-items: center;
+    gap: 18px;
+    background: var(--card);
+    text-align: center;
+  }
+  body.home footer h2 {
+    font-size: 30px;
+    line-height: 1.15;
+    margin: 0 0 10px;
+  }
+  body.home footer p {
+    font-size: 18px;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+  }
+  body.home footer p + p { margin-top: 3px; }
+  body.home footer a { text-underline-offset: 4px; }
+  body.home .socials {
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  body.home .socials .insta svg {
+    width: 38px;
+    height: 38px;
+  }
+}
