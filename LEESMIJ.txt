@@ -1,6 +1,6 @@
-GITHUB-UPDATE — AMBER BOSTEELS (VERSIE 4)
+GITHUB-UPDATE — AMBER BOSTEELS (VERSIE 5)
 
-Deze update bouwt verder op versie 3. In de sectie “Get in touch” staat nu ook je telefoonnummer als klikbare link: +32486881462. Het nummer is toegevoegd op de homepage en op de About me-, Performance-, Teaching- en Film & photography-pagina.
+Deze update bouwt verder op versie 4. De cirkels rond de titels Hans, Tattva en Jumping Over the Zebra Stripes zijn verwijderd. Ook het beschrijvende tekstje bij Jumping Over the Zebra Stripes is verwijderd. De eerdere aanpassingen, waaronder het klikbare telefoonnummer +32486881462 bij “Get in touch”, blijven behouden.
 
 De overige aanpassingen uit versie 3 blijven behouden:
 - performance.html: “Own work”, bijgewerkte credits en de Tattva-link naar de meegeleverde pdf.
