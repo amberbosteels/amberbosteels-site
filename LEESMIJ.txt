@@ -1,18 +1,19 @@
-GITHUB-UPDATE — AMBER BOSTEELS (VERSIE 8)
+GITHUB-UPDATE — AMBER BOSTEELS (VERSIE 9)
 
 Deze update bevat:
-- Een aparte verticale uitsnede van de homepagefoto voor gsm's: de brede foto op desktop blijft behouden, terwijl de mobiele versie de zwarte rechterhelft weglaat.
-- Een lichte terracotta achtergrond op alle pagina's, afgestemd op de kleurstaal die je stuurde.
-- Handgetekende cirkels rond titels en navigatielinks die zichtbaar worden door de lijn geleidelijk te tekenen in plaats van als een volledig rondje te verschijnen.
-- Alle eerdere pagina-aanpassingen blijven behouden.
+- Een lichtere, warm-crèmekleurige terracotta achtergrond voor alle pagina's.
+- Een nauwere verticale mobiele uitsnede van de homepagefoto, met Amber centraal in beeld en vrijwel alle lege zwarte ruimte rechts verwijderd. De desktopfoto blijft ongewijzigd.
+- Op gsm staan de naam en de vier navigatietitels bovenaan over de foto, in een symmetrische 2x2-indeling.
+- De foto sluit op gsm direct aan op de aparte, iets donkerdere Get in touch-achtergrond; er zit geen tussenruimte of strook meer.
+- Alle eerder gemaakte pagina-aanpassingen blijven behouden.
 
 WAT JE OP GITHUB MOET DOEN
 1. Vervang in de hoofdmap: index.html, about.html, performance.html, film.html, teaching.html en style.css.
-2. Vervang ook navigation-hover.css door het meegeleverde nieuwe bestand (deze versie bevat de getekende cirkelanimatie voor het menu).
-3. Upload img/hero-mobile.jpg naar de bestaande map img/ op GitHub.
-4. Upload de andere meegeleverde foto's uit img/ naar je bestaande map img/ als je die nog niet hebt geüpload. Overschrijf img/tattva.jpg met de meegeleverde Tattva-foto.
+2. Vervang ook navigation-hover.css.
+3. Upload het nieuwe bestand img/hero-mobile.jpg naar de bestaande map img/ en overschrijf de vorige hero-mobile.jpg.
+4. Upload de andere meegeleverde foto's uit img/ als je die nog niet eerder hebt toegevoegd. Overschrijf img/tattva.jpg met de meegeleverde Tattva-foto indien nodig.
 5. Laat bestaande bestanden zoals img/hero.jpg, img/about.jpg, img/zebra.jpg, works.html en cv.pdf staan. De desktop-homepage blijft img/hero.jpg gebruiken.
 6. Controleer dat tattva-information.pdf in de hoofdmap staat; de Tattva-link verwijst daarnaar.
 7. Klik op Commit changes.
 
-Let op: deze ZIP is een updatepakket, niet een volledige kopie van de repository. Vervang alleen de genoemde bestanden en voeg de genoemde nieuwe afbeelding toe.
+Let op: dit is een updatepakket en geen volledige kopie van de repository. Vervang alleen de genoemde bestanden en voeg de genoemde afbeelding toe.

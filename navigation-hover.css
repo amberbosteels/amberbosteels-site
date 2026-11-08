@@ -1,4 +1,4 @@
-/* Navigation: outlined circles are inline SVG paths, drawn progressively on hover. */
+/* Mobile overlay navigation + progressive hand-drawn circle animation. */
 .site-header nav {
   gap: 8px 24px;
   font-size: clamp(18px, 1.35vw, 20px);
