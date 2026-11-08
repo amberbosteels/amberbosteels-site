@@ -21,3 +21,7 @@ Let op: dit is een updatepakket en geen volledige kopie van de repository. Verva
 
 EXTRA WIJZIGING VERSIE 10
 - De mobiele navigatie is teruggezet naar de vorige positie: boven de foto op de achtergrond. De overige verbeteringen uit versie 9 blijven behouden.
+
+
+EXTRA WIJZIGING VERSIE 11
+- De lege strook tussen de mobiele homepagefoto en Get in touch is verwijderd. De footer sluit nu direct aan onder de foto; de kleur van Get in touch begint meteen aan de onderrand van de foto, zonder tussenruimte of lijntje.
