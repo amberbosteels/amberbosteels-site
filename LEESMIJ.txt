@@ -1,20 +1,18 @@
-GITHUB-UPDATE — AMBER BOSTEELS (VERSIE 6)
+GITHUB-UPDATE — AMBER BOSTEELS (VERSIE 8)
 
-Deze update bouwt verder op versie 5. De mobiele homepage is verfijnd:
-- het menu staat op gsm in een overzichtelijk raster van twee kolommen;
-- de hero-foto loopt op smalle schermen over de volledige breedte;
-- de footer “Get in touch” is groter en beter leesbaar, met duidelijkere e-mail- en telefoongegevens en een groter Instagram-icoon;
-- de footer heeft een zachte warme achtergrond en houdt rekening met de veilige onderrand van telefoons.
-
-Alle eerdere aanpassingen uit versie 5 blijven behouden, waaronder de aangepaste Performance-, Teaching-, About me- en Film & photography-pagina's en de Tattva-pdf.
+Deze update bevat:
+- Een aparte verticale uitsnede van de homepagefoto voor gsm's: de brede foto op desktop blijft behouden, terwijl de mobiele versie de zwarte rechterhelft weglaat.
+- Een lichte terracotta achtergrond op alle pagina's, afgestemd op de kleurstaal die je stuurde.
+- Handgetekende cirkels rond titels en navigatielinks die zichtbaar worden door de lijn geleidelijk te tekenen in plaats van als een volledig rondje te verschijnen.
+- Alle eerdere pagina-aanpassingen blijven behouden.
 
 WAT JE OP GITHUB MOET DOEN
-1. Vervang in de hoofdmap van je repository: index.html, about.html, performance.html, film.html, teaching.html en style.css.
-2. Upload tattva-information.pdf naar de hoofdmap van je repository. De Tattva-link verwijst naar dit bestand.
-3. Upload de meegeleverde foto's uit de map img/ naar de bestaande map img/ op GitHub. Overschrijf img/tattva.jpg met de meegeleverde Tattva-foto.
-4. Verwijder geen andere bestanden uit img/. Pagina's gebruiken nog bestaande foto's, zoals img/hero.jpg, img/about.jpg en img/zebra.jpg.
-5. Laat navigation-hover.css in de hoofdmap staan; de pagina's laden deze stylesheet voor de hover-cirkels.
-6. Klik op Commit changes.
+1. Vervang in de hoofdmap: index.html, about.html, performance.html, film.html, teaching.html en style.css.
+2. Vervang ook navigation-hover.css door het meegeleverde nieuwe bestand (deze versie bevat de getekende cirkelanimatie voor het menu).
+3. Upload img/hero-mobile.jpg naar de bestaande map img/ op GitHub.
+4. Upload de andere meegeleverde foto's uit img/ naar je bestaande map img/ als je die nog niet hebt geüpload. Overschrijf img/tattva.jpg met de meegeleverde Tattva-foto.
+5. Laat bestaande bestanden zoals img/hero.jpg, img/about.jpg, img/zebra.jpg, works.html en cv.pdf staan. De desktop-homepage blijft img/hero.jpg gebruiken.
+6. Controleer dat tattva-information.pdf in de hoofdmap staat; de Tattva-link verwijst daarnaar.
+7. Klik op Commit changes.
 
-Let op: deze ZIP bevat niet alle bestanden van je website. Upload/vervang alleen de hierboven genoemde bestanden en afbeeldingen. Laat overige bestanden, zoals works.html en cv.pdf, staan. Als je works.html nog gebruikt, voeg daar in de footer onder het e-mailadres ook deze regel toe:
-<p><a href="tel:+32486881462">+32486881462</a></p>
+Let op: deze ZIP is een updatepakket, niet een volledige kopie van de repository. Vervang alleen de genoemde bestanden en voeg de genoemde nieuwe afbeelding toe.

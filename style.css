@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap');
 
 :root {
-  --paper: #ffffff;
-  --card: #f7f1e4;
+  --paper: #D79560;
+  --card: #E4A97E;
   --ink: #3a2424;
   --soft: #6a4545;
   --line: rgba(93, 39, 39, .18);
@@ -29,20 +29,61 @@ a { color: inherit; }
 img { display: block; width: 100%; height: auto; }
 a:focus-visible { outline: 3px solid var(--rust); outline-offset: 4px; border-radius: 4px; }
 
-/* Hand-drawn circle */
-.circled { position: relative; display: inline-block; padding: .15em .45em; z-index: 0; }
-.circled::after {
-  content: ""; position: absolute; z-index: -1;
-  inset: -.18em -.3em -.12em -.35em;
-  background: center / 100% 100% no-repeat;
-  transform: rotate(-2deg);
+/* Hand-drawn circles: inline SVG paths are revealed as if drawn by hand. */
+.circled {
+  position: relative;
+  display: inline-block;
+  padding: .15em .45em;
+  isolation: isolate;
+}
+.circle-draw {
+  position: absolute;
+  z-index: -1;
+  left: -.35em;
+  top: -.18em;
+  width: calc(100% + .65em);
+  height: calc(100% + .3em);
+  overflow: visible;
   pointer-events: none;
 }
-.circled.red::after { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 60' preserveAspectRatio='none'%3E%3Cpath d='M12 33C9 13 62 4 104 5c48 1 90 10 89 29-1 19-52 23-96 22C49 55 8 50 7 33 6 19 34 10 66 8' fill='none' stroke='%23883c2f' stroke-width='2.6' stroke-linecap='round' vector-effect='non-scaling-stroke'/%3E%3C/svg%3E"); }
-.circled.blue::after { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 60' preserveAspectRatio='none'%3E%3Cpath d='M186 22C176 6 122 3 88 5 42 8 6 18 8 34c2 17 48 23 94 21 46-2 92-9 90-27-1-12-26-20-58-23' fill='none' stroke='%235d2727' stroke-width='2.6' stroke-linecap='round' vector-effect='non-scaling-stroke'/%3E%3C/svg%3E"); }
-.circled.yellow::after { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 60' preserveAspectRatio='none'%3E%3Cpath d='M20 40C2 26 36 6 98 5c56-1 98 11 95 29-3 17-58 22-104 21C40 54 4 46 9 30 13 17 44 9 80 7' fill='none' stroke='%23a45f53' stroke-width='2.6' stroke-linecap='round' vector-effect='non-scaling-stroke'/%3E%3C/svg%3E"); }
-.circled.cream::after { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 60' preserveAspectRatio='none'%3E%3Cpath d='M20 40C2 26 36 6 98 5c56-1 98 11 95 29-3 17-58 22-104 21C40 54 4 46 9 30 13 17 44 9 80 7' fill='none' stroke='%23f4ebd7' stroke-width='3.4' stroke-linecap='round' vector-effect='non-scaling-stroke'/%3E%3C/svg%3E"); }
-.circled.green::after { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 60' preserveAspectRatio='none'%3E%3Cpath d='M30 10C68 2 156 2 188 22c14 16-30 33-90 34C46 57 6 48 8 31 10 16 50 8 92 6' fill='none' stroke='%232f5a4a' stroke-width='2.6' stroke-linecap='round' vector-effect='non-scaling-stroke'/%3E%3C/svg%3E"); }
+.circle-draw path {
+  fill: none;
+  stroke: var(--circle-color, var(--burgundy));
+  stroke-width: 2.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  vector-effect: non-scaling-stroke;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+}
+.circled.red { --circle-color: #883c2f; }
+.circled.blue { --circle-color: #5d2727; }
+.circled.yellow { --circle-color: #a45f53; }
+.circled.cream { --circle-color: #f4ebd7; }
+.circled.green { --circle-color: #2f5a4a; }
+.circled.teach-rose { --circle-color: #c74758; }
+.circled.teach-blue { --circle-color: #2d83b5; }
+.circled.teach-gold { --circle-color: #c18b19; }
+.circled.teach-green { --circle-color: #2f805d; }
+.circled.teach-purple { --circle-color: #8253b6; }
+.circled.teach-orange { --circle-color: #d36f2e; }
+@keyframes draw-circle {
+  from { stroke-dashoffset: 1; }
+  to { stroke-dashoffset: 0; }
+}
+/* Headings draw their outline when the page appears; hovering can redraw it. */
+.page-title .circle-draw path,
+.section-title .circle-draw path,
+.teach-card h2 .circle-draw path {
+  animation: draw-circle .9s cubic-bezier(.55,.05,.25,1) .18s both;
+}
+.circled:hover > .circle-draw path,
+.circled:focus-visible > .circle-draw path {
+  animation: draw-circle .9s cubic-bezier(.55,.05,.25,1) both;
+}
+@media (prefers-reduced-motion: reduce) {
+  .circle-draw path { stroke-dashoffset: 0; animation: none !important; }
+}
 
 /* Header */
 .site-header {
@@ -201,11 +242,11 @@ footer p { margin: 0; }
   padding: 0 16px;
 }
 .banner-title .circled { padding: .12em .4em; }
-.banner-title .circled::after { inset: -.12em -.2em -.08em -.25em; }
+.banner-title .circled .circle-draw { left: -.25em; top: -.12em; width: calc(100% + .45em); height: calc(100% + .2em); }
 .banner-film svg { position: absolute; z-index: 1; width: clamp(110px, 16vw, 220px); opacity: .22; right: 8%; top: 50%; transform: translateY(-50%) rotate(-6deg); }
 .banner-film::before { display: none; }
 .banners + *, main:has(.banners) + footer { margin-top: 0; }
-@media (max-width: 640px) { .banner-title .circled::after { inset: -.2em -.15em -.12em -.2em; } }
+@media (max-width: 640px) { .banner-title .circled .circle-draw { left: -.2em; top: -.2em; width: calc(100% + .35em); height: calc(100% + .32em); } }
 
 /* Palette and navigation refinements */
 .brand, .page-title, .theme h2, .work h2, .teach-card h2, footer h2 { color: var(--burgundy); }
@@ -215,27 +256,6 @@ footer p { margin: 0; }
 .hero { margin-bottom: clamp(10px, 1.4vw, 18px); }
 .socials .insta { color: var(--burgundy); display: inline-flex; }
 .socials .insta:hover { color: var(--rust); }
-
-
-/* Each Teaching style gets its own hand-drawn circle colour. */
-.teach-card h2 .circled.teach-rose::after {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 60' preserveAspectRatio='none'%3E%3Cpath d='M12 33C9 13 62 4 104 5c48 1 90 10 89 29-1 19-52 23-96 22C49 55 8 50 7 33 6 19 34 10 66 8' fill='none' stroke='%23c74758' stroke-width='2.8' stroke-linecap='round' vector-effect='non-scaling-stroke'/%3E%3C/svg%3E");
-}
-.teach-card h2 .circled.teach-blue::after {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 60' preserveAspectRatio='none'%3E%3Cpath d='M186 22C176 6 122 3 88 5 42 8 6 18 8 34c2 17 48 23 94 21 46-2 92-9 90-27-1-12-26-20-58-23' fill='none' stroke='%232d83b5' stroke-width='2.8' stroke-linecap='round' vector-effect='non-scaling-stroke'/%3E%3C/svg%3E");
-}
-.teach-card h2 .circled.teach-gold::after {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 60' preserveAspectRatio='none'%3E%3Cpath d='M20 40C2 26 36 6 98 5c56-1 98 11 95 29-3 17-58 22-104 21C40 54 4 46 9 30 13 17 44 9 80 7' fill='none' stroke='%23c18b19' stroke-width='2.8' stroke-linecap='round' vector-effect='non-scaling-stroke'/%3E%3C/svg%3E");
-}
-.teach-card h2 .circled.teach-green::after {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 60' preserveAspectRatio='none'%3E%3Cpath d='M30 10C68 2 156 2 188 22c14 16-30 33-90 34C46 57 6 48 8 31 10 16 50 8 92 6' fill='none' stroke='%232f805d' stroke-width='2.8' stroke-linecap='round' vector-effect='non-scaling-stroke'/%3E%3C/svg%3E");
-}
-.teach-card h2 .circled.teach-purple::after {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 60' preserveAspectRatio='none'%3E%3Cpath d='M12 33C9 13 62 4 104 5c48 1 90 10 89 29-1 19-52 23-96 22C49 55 8 50 7 33 6 19 34 10 66 8' fill='none' stroke='%238253b6' stroke-width='2.8' stroke-linecap='round' vector-effect='non-scaling-stroke'/%3E%3C/svg%3E");
-}
-.teach-card h2 .circled.teach-orange::after {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 60' preserveAspectRatio='none'%3E%3Cpath d='M186 22C176 6 122 3 88 5 42 8 6 18 8 34c2 17 48 23 94 21 46-2 92-9 90-27-1-12-26-20-58-23' fill='none' stroke='%23d36f2e' stroke-width='2.8' stroke-linecap='round' vector-effect='non-scaling-stroke'/%3E%3C/svg%3E");
-}
 
 
 /* Secondary heading used to group the artist's own performances. */
@@ -277,30 +297,36 @@ footer p { margin: 0; }
     margin-bottom: 0;
   }
   body.home .hero a { display: block; }
+  body.home .hero picture { display: block; width: 100%; }
   body.home .hero img {
+    display: block;
     width: 100%;
     height: auto;
+    min-height: 0;
+    max-height: none;
+    object-fit: contain;
+    object-position: center center;
   }
   body.home footer {
     width: 100%;
     max-width: none;
     margin: 30px auto 0;
-    padding: 30px 22px calc(32px + env(safe-area-inset-bottom, 0px));
+    padding: 24px 22px calc(26px + env(safe-area-inset-bottom, 0px));
     display: grid;
     grid-template-columns: minmax(0, 1fr);
     justify-items: center;
-    gap: 18px;
+    gap: 13px;
     background: var(--card);
     text-align: center;
   }
   body.home footer h2 {
-    font-size: 30px;
-    line-height: 1.15;
-    margin: 0 0 10px;
+    font-size: 23px;
+    line-height: 1.2;
+    margin: 0 0 7px;
   }
   body.home footer p {
-    font-size: 18px;
-    line-height: 1.6;
+    font-size: 16px;
+    line-height: 1.55;
     overflow-wrap: anywhere;
   }
   body.home footer p + p { margin-top: 3px; }
@@ -311,7 +337,16 @@ footer p { margin: 0; }
     gap: 20px;
   }
   body.home .socials .insta svg {
-    width: 38px;
-    height: 38px;
+    width: 32px;
+    height: 32px;
   }
+}
+
+
+/* Terracotta palette refinement: the page canvas is the same warm colour on every page. */
+body { background-color: var(--paper); }
+
+/* Keep the homepage mobile hero genuinely portrait rather than enlarging/cropping the wide image. */
+@media (max-width: 640px) {
+  body.home .hero { background: var(--paper); }
 }

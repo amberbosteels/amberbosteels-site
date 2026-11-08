@@ -1,54 +1,36 @@
-/* Navigation hover circles + slightly larger navigation labels.
-   Link this stylesheet after style.css on every page. */
+/* Navigation: outlined circles are inline SVG paths, drawn progressively on hover. */
 .site-header nav {
   gap: 8px 24px;
   font-size: clamp(18px, 1.35vw, 20px);
 }
-
 .site-header nav a {
   position: relative;
   display: inline-block;
   padding: 5px 7px;
   isolation: isolate;
   transition: color .2s ease;
+  text-decoration: none;
 }
-
-.site-header nav a::after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  inset: -1px -5px -2px -5px;
-  background: center / 100% 100% no-repeat url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 60' preserveAspectRatio='none'%3E%3Cpath d='M20 40C2 26 36 6 98 5c56-1 98 11 95 29-3 17-58 22-104 21C40 54 4 46 9 30 13 17 44 9 80 7' fill='none' stroke='%235d2727' stroke-width='2.6' stroke-linecap='round' vector-effect='non-scaling-stroke'/%3E%3C/svg%3E");
-  opacity: 0;
-  transform: rotate(-2deg) scale(.96);
-  transition: opacity .2s ease, transform .2s ease;
-  pointer-events: none;
-}
-
 .site-header nav a:hover,
 .site-header nav a:focus-visible,
 .site-header nav a[aria-current="page"] {
   color: var(--burgundy, #5d2727);
 }
-
-.site-header nav a:hover::after,
-.site-header nav a:focus-visible::after,
-.site-header nav a[aria-current="page"]::after {
-  opacity: 1;
-  transform: rotate(-2deg) scale(1);
+.site-header nav a .circle-draw {
+  left: -5px;
+  top: -1px;
+  width: calc(100% + 10px);
+  height: calc(100% + 3px);
 }
-
-/* Keep navigation easy to use on smaller screens too. */
+.site-header nav a .circle-draw path { stroke: var(--burgundy, #5d2727); }
+.site-header nav a:hover .circle-draw path,
+.site-header nav a:focus-visible .circle-draw path,
+.site-header nav a[aria-current="page"] .circle-draw path {
+  animation: draw-circle .85s cubic-bezier(.55,.05,.25,1) forwards;
+}
 @media (max-width: 640px) {
-  .site-header nav {
-    gap: 7px 14px;
-    font-size: 17px;
-  }
+  .site-header nav { gap: 7px 14px; font-size: 17px; }
 }
-
 @media (prefers-reduced-motion: reduce) {
-  .site-header nav a,
-  .site-header nav a::after {
-    transition: none;
-  }
+  .site-header nav a, .site-header nav a .circle-draw path { transition: none; animation: none !important; stroke-dashoffset: 0; }
 }
