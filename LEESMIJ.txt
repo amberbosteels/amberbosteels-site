@@ -1,9 +1,9 @@
-GITHUB-UPDATE — AMBER BOSTEELS (VERSIE 9)
+GITHUB-UPDATE — AMBER BOSTEELS (VERSIE 10)
 
 Deze update bevat:
 - Een lichtere, warm-crèmekleurige terracotta achtergrond voor alle pagina's.
 - Een nauwere verticale mobiele uitsnede van de homepagefoto, met Amber centraal in beeld en vrijwel alle lege zwarte ruimte rechts verwijderd. De desktopfoto blijft ongewijzigd.
-- Op gsm staan de naam en de vier navigatietitels bovenaan over de foto, in een symmetrische 2x2-indeling.
+- Op gsm staan de naam en de vier navigatietitels opnieuw boven de foto op de terracotta achtergrond, zoals in de vorige versie. De navigatie staat dus niet meer over de foto.
 - De foto sluit op gsm direct aan op de aparte, iets donkerdere Get in touch-achtergrond; er zit geen tussenruimte of strook meer.
 - Alle eerder gemaakte pagina-aanpassingen blijven behouden.
 
@@ -17,3 +17,7 @@ WAT JE OP GITHUB MOET DOEN
 7. Klik op Commit changes.
 
 Let op: dit is een updatepakket en geen volledige kopie van de repository. Vervang alleen de genoemde bestanden en voeg de genoemde afbeelding toe.
+
+
+EXTRA WIJZIGING VERSIE 10
+- De mobiele navigatie is teruggezet naar de vorige positie: boven de foto op de achtergrond. De overige verbeteringen uit versie 9 blijven behouden.
