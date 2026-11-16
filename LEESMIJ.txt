@@ -58,3 +58,24 @@ UPLOAD VOOR VERSIE 13
 1. Vervang film.html en style.css in de hoofdmap.
 2. Upload de vier foto's met de exacte bestandsnamen hierboven naar img/.
 3. Commit changes op GitHub. Alleen film.html en style.css hoeven voor deze wijziging vervangen te worden.
+
+
+EXTRA WIJZIGING VERSIE 14 — TRAILERLINKS
+- De twee Vimeo-links hebben nu de namen “Trailer Nu is het nog rustig” en “Trailer FLOW”.
+- De links verwijzen nog steeds naar de twee door jou opgegeven Vimeo-video's.
+- De fotovakken tonen bij een ontbrekend bestand een tekstmelding in plaats van een kapot afbeeldingsicoon.
+
+BELANGRIJK OVER DE VIER FOTO'S
+De HTML zoekt momenteel naar deze exacte paden:
+- img/photography-1.jpg
+- img/photography-2.jpg
+- img/photography-3.jpg
+- img/photography-4.jpg
+
+Deze vier persoonlijke foto's zijn niet aanwezig in dit ZIP-bestand. De verwijzing naar img/photography-1.jpg geeft op de huidige publieke GitHub-branch ook een 404. Als de foto's al in GitHub staan, hebben ze dus waarschijnlijk een andere bestandsnaam, extensie of maplocatie. Stuur de vier exacte bestandsnamen zoals ze in GitHub onder img/ verschijnen (bijvoorbeeld foto1.jpeg, foto2.png, enzovoort), dan kan ik de HTML aan de echte bestanden koppelen.
+
+UPLOAD VOOR VERSIE 14
+1. Vervang alleen film.html in de hoofdmap.
+2. Laat style.css en de overige bestanden staan; die zijn voor deze tekstwijziging niet aangepast.
+3. Controleer dat de vier foto's onder img/ staan en noteer hun exacte bestandsnamen en extensies.
+4. Commit changes op GitHub.
