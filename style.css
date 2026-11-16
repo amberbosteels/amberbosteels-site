@@ -353,32 +353,54 @@ body { background-color: var(--paper); }
 }
 
 /* Film & photography portfolio examples */
+.film-intro {
+  max-width: 64ch;
+  font-size: 1.08em;
+}
+.film-intro p { margin: 0; }
 .film-showcase {
   max-width: 100%;
-  margin-top: clamp(42px, 6vw, 72px);
+  margin-top: clamp(34px, 4.5vw, 58px);
 }
 .film-showcase .section-title {
-  margin-bottom: 18px;
+  margin-bottom: 14px;
+}
+.film-showcase > p:not(.gallery-intro) {
+  max-width: 72ch;
+  margin: 0 0 14px;
 }
 .trailer-links {
   display: flex;
-  flex-wrap: wrap;
-  gap: 14px;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: clamp(7px, 1.2vw, 14px);
+  margin-top: 20px;
+  max-width: 100%;
+  overflow-x: auto;
+  padding: 2px 2px 10px;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+}
+.trailer-links .button {
+  flex: 0 0 auto;
+  white-space: nowrap;
+  padding: 9px clamp(11px, 1.5vw, 20px);
+  font-size: clamp(12px, 1.1vw, 16px);
 }
 .gallery-intro {
   max-width: 64ch;
-  margin: 0 0 24px;
+  margin: 0 0 18px;
 }
 .photo-gallery {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: clamp(16px, 2.5vw, 30px);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: clamp(7px, 1.4vw, 18px);
 }
 .photo-gallery figure {
   min-width: 0;
   margin: 0;
   overflow: hidden;
-  border-radius: 7px;
+  border-radius: 6px;
   background: var(--card);
 }
 .photo-gallery img {
@@ -387,10 +409,24 @@ body { background-color: var(--paper); }
   height: auto;
   object-fit: cover;
 }
+.photo-gallery figure.missing-photo::before {
+  content: attr(data-placeholder);
+  display: grid;
+  place-items: center;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  padding: 5px;
+  color: var(--soft);
+  background: var(--card);
+  font-size: clamp(9px, 1vw, 12px);
+  line-height: 1.3;
+  text-align: center;
+}
 @media (max-width: 640px) {
-  .film-showcase { margin-top: 38px; }
-  .trailer-links { flex-direction: column; align-items: flex-start; }
-  .photo-gallery { grid-template-columns: 1fr; gap: 18px; }
-  .photo-gallery img { aspect-ratio: 4 / 3; }
+  .film-showcase { margin-top: 34px; }
+  .trailer-links { margin-right: calc(-1 * var(--side)); padding-right: var(--side); }
+  .trailer-links .button { font-size: 12px; padding: 8px 11px; }
+  .photo-gallery { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px; }
+  .photo-gallery figure { border-radius: 4px; }
 }
 

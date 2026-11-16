@@ -37,3 +37,24 @@ UPLOAD VOOR DEZE WIJZIGING
 1. Vervang film.html en style.css in de hoofdmap van je GitHub-repository.
 2. Upload je vier foto's naar de map img/ en geef ze de bestandsnamen photography-1.jpg t/m photography-4.jpg. Als je foto's PNG-bestanden zijn, laat het me weten zodat ik de verwijzingen kan aanpassen (of exporteer ze als JPG).
 3. De Vimeo-trailers linken rechtstreeks naar de twee opgegeven video's.
+
+
+EXTRA WIJZIGING VERSIE 13 — FILM & PHOTOGRAPHY
+- Na de openingszin staat nu de titel “Film”.
+- Onder Film staan de tekst over Beeldstorm, een extra uitlegzin en drie links op één rij: Visit beeldstorm.be, Watch theatre trailer en Watch dance trailer.
+- De titel “Photography” volgt daarna, met de korte introductietekst.
+- De vier foto's staan naast elkaar op één rij, ook op gsm (kleiner formaat).
+- Als een foto nog niet op de juiste plek staat, verschijnt een duidelijke “Upload photo”-placeholder in plaats van een gebroken afbeelding/ vraagteken.
+
+FOTO'S TOEVOEGEN
+Upload de vier echte foto's in de GitHub-map img/ met exact deze namen en extensies:
+- img/photography-1.jpg
+- img/photography-2.jpg
+- img/photography-3.jpg
+- img/photography-4.jpg
+De huidige ZIP bevat de HTML-verwijzingen, maar niet de vier persoonlijke foto's zelf. Daarom zie je pas de echte foto's zodra je deze vier bestanden uploadt. Als jouw bestanden .jpeg of .png zijn, hernoem ze dan niet alleen als de inhoud anders is; stuur mij liever de exacte bestandsnamen, dan pas ik de links aan.
+
+UPLOAD VOOR VERSIE 13
+1. Vervang film.html en style.css in de hoofdmap.
+2. Upload de vier foto's met de exacte bestandsnamen hierboven naar img/.
+3. Commit changes op GitHub. Alleen film.html en style.css hoeven voor deze wijziging vervangen te worden.
