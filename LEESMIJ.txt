@@ -1,4 +1,4 @@
-GITHUB-UPDATE — AMBER BOSTEELS (VERSIE 10)
+GITHUB-UPDATE — AMBER BOSTEELS (VERSIE 12)
 
 Deze update bevat:
 - Een lichtere, warm-crèmekleurige terracotta achtergrond voor alle pagina's.
@@ -25,3 +25,15 @@ EXTRA WIJZIGING VERSIE 10
 
 EXTRA WIJZIGING VERSIE 11
 - De lege strook tussen de mobiele homepagefoto en Get in touch is verwijderd. De footer sluit nu direct aan onder de foto; de kleur van Get in touch begint meteen aan de onderrand van de foto, zonder tussenruimte of lijntje.
+
+
+EXTRA WIJZIGING VERSIE 12 — FILM & PHOTOGRAPHY
+- Onder de knop “Visit beeldstorm.be” staan nu twee links naar trailers op Vimeo.
+- Daaronder staat een Photography-sectie met een raster voor vier foto's.
+- De vier afbeeldingsbestanden moeten in de GitHub-map img/ komen met exact deze namen: photography-1.jpg, photography-2.jpg, photography-3.jpg en photography-4.jpg.
+- De foto's worden op de pagina in een rustig raster getoond; op een gsm staan ze onder elkaar.
+
+UPLOAD VOOR DEZE WIJZIGING
+1. Vervang film.html en style.css in de hoofdmap van je GitHub-repository.
+2. Upload je vier foto's naar de map img/ en geef ze de bestandsnamen photography-1.jpg t/m photography-4.jpg. Als je foto's PNG-bestanden zijn, laat het me weten zodat ik de verwijzingen kan aanpassen (of exporteer ze als JPG).
+3. De Vimeo-trailers linken rechtstreeks naar de twee opgegeven video's.
