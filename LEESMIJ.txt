@@ -1,81 +1,19 @@
-GITHUB-UPDATE — AMBER BOSTEELS (VERSIE 12)
+VERSIE 15 — FOTOLINKS GECORRIGEERD
 
-Deze update bevat:
-- Een lichtere, warm-crèmekleurige terracotta achtergrond voor alle pagina's.
-- Een nauwere verticale mobiele uitsnede van de homepagefoto, met Amber centraal in beeld en vrijwel alle lege zwarte ruimte rechts verwijderd. De desktopfoto blijft ongewijzigd.
-- Op gsm staan de naam en de vier navigatietitels opnieuw boven de foto op de terracotta achtergrond, zoals in de vorige versie. De navigatie staat dus niet meer over de foto.
-- De foto sluit op gsm direct aan op de aparte, iets donkerdere Get in touch-achtergrond; er zit geen tussenruimte of strook meer.
-- Alle eerder gemaakte pagina-aanpassingen blijven behouden.
+Ik heb op basis van je GitHub-screenshot de vier afbeeldingspaden aangepast.
+De foto's staan in dezelfde map als film.html (de hoofdmap van je website), niet in de map img/. Daarom verwijst film.html nu rechtstreeks naar:
 
-WAT JE OP GITHUB MOET DOEN
-1. Vervang in de hoofdmap: index.html, about.html, performance.html, film.html, teaching.html en style.css.
-2. Vervang ook navigation-hover.css.
-3. Upload het nieuwe bestand img/hero-mobile.jpg naar de bestaande map img/ en overschrijf de vorige hero-mobile.jpg.
-4. Upload de andere meegeleverde foto's uit img/ als je die nog niet eerder hebt toegevoegd. Overschrijf img/tattva.jpg met de meegeleverde Tattva-foto indien nodig.
-5. Laat bestaande bestanden zoals img/hero.jpg, img/about.jpg, img/zebra.jpg, works.html en cv.pdf staan. De desktop-homepage blijft img/hero.jpg gebruiken.
-6. Controleer dat tattva-information.pdf in de hoofdmap staat; de Tattva-link verwijst daarnaar.
-7. Klik op Commit changes.
+- photography-1.jpg
+- photography-2.jpg
+- photography-3.jpg
+- photography-4.jpg
 
-Let op: dit is een updatepakket en geen volledige kopie van de repository. Vervang alleen de genoemde bestanden en voeg de genoemde afbeelding toe.
+Let op: GitHub bevat ook photography-1.JPG en photography-4.jpeg. De pagina gebruikt bewust de lowercase .jpg-bestanden, die ook in je screenshot zichtbaar zijn.
 
+WAT JE MOET DOEN
+1. Open de map amber-final-update-v15 in deze ZIP.
+2. Vervang alleen film.html in de hoofdmap van je GitHub-repository.
+3. Laat de vier foto's in diezelfde hoofdmap staan, naast film.html. Verplaats ze niet naar img/.
+4. Commit changes.
 
-EXTRA WIJZIGING VERSIE 10
-- De mobiele navigatie is teruggezet naar de vorige positie: boven de foto op de achtergrond. De overige verbeteringen uit versie 9 blijven behouden.
-
-
-EXTRA WIJZIGING VERSIE 11
-- De lege strook tussen de mobiele homepagefoto en Get in touch is verwijderd. De footer sluit nu direct aan onder de foto; de kleur van Get in touch begint meteen aan de onderrand van de foto, zonder tussenruimte of lijntje.
-
-
-EXTRA WIJZIGING VERSIE 12 — FILM & PHOTOGRAPHY
-- Onder de knop “Visit beeldstorm.be” staan nu twee links naar trailers op Vimeo.
-- Daaronder staat een Photography-sectie met een raster voor vier foto's.
-- De vier afbeeldingsbestanden moeten in de GitHub-map img/ komen met exact deze namen: photography-1.jpg, photography-2.jpg, photography-3.jpg en photography-4.jpg.
-- De foto's worden op de pagina in een rustig raster getoond; op een gsm staan ze onder elkaar.
-
-UPLOAD VOOR DEZE WIJZIGING
-1. Vervang film.html en style.css in de hoofdmap van je GitHub-repository.
-2. Upload je vier foto's naar de map img/ en geef ze de bestandsnamen photography-1.jpg t/m photography-4.jpg. Als je foto's PNG-bestanden zijn, laat het me weten zodat ik de verwijzingen kan aanpassen (of exporteer ze als JPG).
-3. De Vimeo-trailers linken rechtstreeks naar de twee opgegeven video's.
-
-
-EXTRA WIJZIGING VERSIE 13 — FILM & PHOTOGRAPHY
-- Na de openingszin staat nu de titel “Film”.
-- Onder Film staan de tekst over Beeldstorm, een extra uitlegzin en drie links op één rij: Visit beeldstorm.be, Watch theatre trailer en Watch dance trailer.
-- De titel “Photography” volgt daarna, met de korte introductietekst.
-- De vier foto's staan naast elkaar op één rij, ook op gsm (kleiner formaat).
-- Als een foto nog niet op de juiste plek staat, verschijnt een duidelijke “Upload photo”-placeholder in plaats van een gebroken afbeelding/ vraagteken.
-
-FOTO'S TOEVOEGEN
-Upload de vier echte foto's in de GitHub-map img/ met exact deze namen en extensies:
-- img/photography-1.jpg
-- img/photography-2.jpg
-- img/photography-3.jpg
-- img/photography-4.jpg
-De huidige ZIP bevat de HTML-verwijzingen, maar niet de vier persoonlijke foto's zelf. Daarom zie je pas de echte foto's zodra je deze vier bestanden uploadt. Als jouw bestanden .jpeg of .png zijn, hernoem ze dan niet alleen als de inhoud anders is; stuur mij liever de exacte bestandsnamen, dan pas ik de links aan.
-
-UPLOAD VOOR VERSIE 13
-1. Vervang film.html en style.css in de hoofdmap.
-2. Upload de vier foto's met de exacte bestandsnamen hierboven naar img/.
-3. Commit changes op GitHub. Alleen film.html en style.css hoeven voor deze wijziging vervangen te worden.
-
-
-EXTRA WIJZIGING VERSIE 14 — TRAILERLINKS
-- De twee Vimeo-links hebben nu de namen “Trailer Nu is het nog rustig” en “Trailer FLOW”.
-- De links verwijzen nog steeds naar de twee door jou opgegeven Vimeo-video's.
-- De fotovakken tonen bij een ontbrekend bestand een tekstmelding in plaats van een kapot afbeeldingsicoon.
-
-BELANGRIJK OVER DE VIER FOTO'S
-De HTML zoekt momenteel naar deze exacte paden:
-- img/photography-1.jpg
-- img/photography-2.jpg
-- img/photography-3.jpg
-- img/photography-4.jpg
-
-Deze vier persoonlijke foto's zijn niet aanwezig in dit ZIP-bestand. De verwijzing naar img/photography-1.jpg geeft op de huidige publieke GitHub-branch ook een 404. Als de foto's al in GitHub staan, hebben ze dus waarschijnlijk een andere bestandsnaam, extensie of maplocatie. Stuur de vier exacte bestandsnamen zoals ze in GitHub onder img/ verschijnen (bijvoorbeeld foto1.jpeg, foto2.png, enzovoort), dan kan ik de HTML aan de echte bestanden koppelen.
-
-UPLOAD VOOR VERSIE 14
-1. Vervang alleen film.html in de hoofdmap.
-2. Laat style.css en de overige bestanden staan; die zijn voor deze tekstwijziging niet aangepast.
-3. Controleer dat de vier foto's onder img/ staan en noteer hun exacte bestandsnamen en extensies.
-4. Commit changes op GitHub.
+De trailerlinks blijven staan met de namen “Trailer Nu is het nog rustig” en “Trailer FLOW”. De overige bestanden in de ZIP zijn meegeleverd als volledige kopie van de vorige websiteversie; voor deze fotofix hoef je ze niet te vervangen.
